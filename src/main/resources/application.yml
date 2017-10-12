@@ -2,7 +2,8 @@ server:
   port: 8090
   context-path: /
 logging:
-  level: info
+  level: debug
+  path: /data/log/website
 
 spring:
   thymeleaf:
@@ -10,6 +11,19 @@ spring:
     suffix: .html
     prefix: classpath:/templates/
     content-type: text/html
+  profiles:
+    active: mac
 
+---
+spring:
+  profiles: mac
+logging:
+  level: info
+  path: /data/log/website
 
-
+---
+spring:
+  profiles: windows
+logging:
+  level: info
+  path: H:/study/data/log/website
