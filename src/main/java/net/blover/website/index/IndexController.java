@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +32,7 @@ public class IndexController {
     @RequestMapping("index.html")
     public String index(Model model) {
         model.addAttribute("name", "chen");
-        logger.info("fadfasdasds");
-        return "index";
+        logger.info("fg");
+        return "hello";
     }
 }
