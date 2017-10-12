@@ -1,20 +1,15 @@
 server:
   port: 8090
   context-path: /
-spring:
-  mvc:
-    view:
-      prefix: classpath:/templates/
-      suffix: .html
 logging:
   level: info
 
-#spring:
-#  thymeleaf:
-#    mode: HTML5
-#    encoding: utf-8
-#    suffix: .html
-#    prefix: classpath:/templates/
+spring:
+  thymeleaf:
+    encoding: utf-8
+    suffix: .html
+    prefix: classpath:/templates/
+    content-type: text/html
 
 
 

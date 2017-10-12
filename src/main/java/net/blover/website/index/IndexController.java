@@ -31,7 +31,7 @@ public class IndexController {
     @RequestMapping("index.html")
     public String index(Model model) {
         model.addAttribute("name", "chen");
-        logger.info("fadfa");
+        logger.info("fadfasdasds");
         return "index";
     }
 }
