@@ -4,7 +4,7 @@ server:
 
 spring:
   profiles:
-    active: dev-windows
+    active: dev-mac
   thymeleaf:
     encoding: utf-8
     suffix: .html
