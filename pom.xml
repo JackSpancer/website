@@ -13,11 +13,13 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.7.RELEASE</version>
     </parent>
+
     <properties>
         <springBootVersion>1.5.7.RELEASE</springBootVersion><!-- 1.5.7版本的springboot不知道默认的thymeleaf（2.0），需要将其改为3.0版本-->
         <thymeleafVersion>3.0.2.RELEASE</thymeleafVersion>
         <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
         <thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
+        <mysql.version>5.1.21</mysql.version>
     </properties>
 
     <dependencies>
@@ -29,10 +31,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--<optional>true</optional> &lt;!&ndash; 表示依赖不会传递 &ndash;&gt;-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional> <!-- 表示依赖不会传递 -->
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 

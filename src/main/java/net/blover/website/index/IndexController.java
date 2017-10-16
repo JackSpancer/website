@@ -31,10 +31,7 @@ public class IndexController {
     @RequestMapping("index.html")
     public String index(Model model) {
         model.addAttribute("name", "chen");
-        logger.info("fg");
-        if (logger.isDebugEnabled()) {
-            logger.debug("debug而已，请忽略");
-        }
-        return "hello";
+        logger.info("Aaron");
+        return "index";
     }
 }
