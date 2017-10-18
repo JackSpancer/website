@@ -9,6 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApplicationWebsite {
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationWebsite.class);
+        SpringApplication.run(ApplicationWebsite.class, args);
     }
 }
