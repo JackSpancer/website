@@ -5,5 +5,5 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BaseController {
-    public Logger logger = LoggerFactory.getLogger(IndexController.class);
+    public Logger log = LoggerFactory.getLogger(IndexController.class);
 }

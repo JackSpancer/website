@@ -1,13 +1,19 @@
 package net.blover.website.user.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class User implements Serializable{
+
+    private static Long serialVersionUID = 1L;
+
     private String id;
 
     private String name;
 
     private Integer age;
+
+    private Date createTime;
 
     public String getId() {
         return id;
@@ -15,6 +21,14 @@ public class User implements Serializable{
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
     }
 
     public String getName() {
