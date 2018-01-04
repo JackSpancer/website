@@ -40,6 +40,7 @@ public class SQLInterceptor implements Interceptor {
 //            PageInterceptor.setFieldValue(boundSql, "sql", pageSql);
 //            PageUtil.removePage();
 //        }
+
         log.info("拦截器");
         return invocation.proceed();
     }
